@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#eeeeee"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/pos_bottom_bar">
+    
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pos_flipper"
+            android:inAnimation="@anim/transactiondetails_enter"
+            android:outAnimation="@anim/transactiondetails_exit"
+            android:measureAllChildren="false">
+    
+            <RelativeLayout
+                android:id="@+id/pos_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_padding"
+                android:background="@drawable/fragment_transactiondetails_bg">
+    
+                <include layout="@layout/fragment_point_of_sale_header"
+                         android:id="@+id/pos_main_header" />
+    
+                <EditText
+                    android:id="@+id/pos_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_padding"
+                    android:layout_toLeftOf="@+id/pos_currency"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pos_main_header"
+                    android:ems="10"
+                    android:textColor="#50bf82"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:hint="@string/pos_amt"
+                    android:inputType="numberDecimal" />
+    
+                <Spinner
+                    android:id="@+id/pos_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/layout_padding"
+                    android:layout_alignBaseline="@+id/pos_amt" />
+    
+                <EditText
+                    android:id="@+id/pos_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/pos_amt"
+                    android:layout_marginLeft="@dimen/layout_padding"
+                    android:layout_marginRight="@dimen/layout_padding"
+                    android:layout_marginBottom="@dimen/layout_padding"
+                    android:layout_marginTop="0dp"
+                    android:ems="10"
+                    android:hint="@string/pos_notes"
+                    android:inputType="textMultiLine" >
+                </EditText>
+    
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pos_notes"
+                    android:id="@+id/pos_submit"
+                    android:textColor="#ffffff"
+                    android:text="@string/pos_submit"
+                    android:filterTouchesWhenObscured="true"
+                    android:background="@drawable/button_primary">
+                </Button>
+    
+            </RelativeLayout>
+    
+            <LinearLayout
+                android:id="@+id/pos_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_padding"
+                android:background="@drawable/fragment_transactiondetails_bg"
+                android:orientation="vertical">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="60dp"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pos_loading_cancel"
+                    android:textColor="#000000"
+                    android:text="@string/pos_accept_cancel"
+                    android:filterTouchesWhenObscured="true"
+                    android:background="@drawable/button_secondary" />
+            </LinearLayout>
+    
+            <LinearLayout
+                android:id="@+id/pos_accept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_padding"
+                android:orientation="vertical"
+                android:background="@drawable/fragment_transactiondetails_bg">
+    
+                <include layout="@layout/fragment_point_of_sale_header"
+                         android:id="@+id/pos_accept_header" />
+    
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pos_accept_waiting"
+                    android:background="@color/pos_waiting_good"
+                    android:id="@+id/pos_accept_waiting"
+                    android:gravity="center"
+                    android:padding="@dimen/layout_padding"/>
+    
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/pos_accept_qr"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/layout_padding"/>
+    
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/layout_padding"
+                    android:paddingRight="@dimen/layout_padding"
+                    android:id="@+id/pos_accept_desc"/>
+    
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee"
+                    android:layout_marginTop="15dp" />
+    
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pos_accept_cancel"
+                    android:textColor="#000000"
+                    android:text="@string/pos_accept_cancel"
+                    android:filterTouchesWhenObscured="true"
+                    android:background="@drawable/button_secondary">
+                </Button>
+            </LinearLayout>
+    
+            <LinearLayout
+                android:id="@+id/pos_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_padding"
+                android:orientation="vertical"
+                android:background="@drawable/fragment_transactiondetails_bg">
+    
+                <include layout="@layout/fragment_point_of_sale_header"
+                         android:id="@+id/pos_result_header" />
+    
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#dddddd"
+                    android:id="@+id/pos_result_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+    
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pos_result_msg"
+                    android:gravity="center"
+                    android:padding="@dimen/layout_padding"/>
+    
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee"
+                    android:layout_marginTop="15dp" />
+    
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pos_result_ok"
+                    android:textColor="#000000"
+                    android:filterTouchesWhenObscured="true"
+                    android:text="@string/pos_result_ok"
+                    android:background="@drawable/button_secondary">
+                </Button>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pos_add_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_padding"
+                android:background="@drawable/fragment_transactiondetails_bg">
+
+                <include layout="@layout/fragment_point_of_sale_header"
+                         android:id="@+id/pos_add_tip_header" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11pt"
+                    android:padding="15dp"
+                    android:id="@+id/pos_add_tip_title"
+                    android:layout_below="@+id/pos_add_tip_header"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/pos_add_tip_buttons_1"
+                    android:layout_below="@+id/pos_add_tip_title">
+                    <Button
+                        style="@style/PointOfSaleTipButton"
+                        android:filterTouchesWhenObscured="true"
+                        android:tag="5"/>
+                    <Button
+                        style="@style/PointOfSaleTipButton"
+                        android:filterTouchesWhenObscured="true"
+                        android:tag="10"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/pos_add_tip_buttons_2"
+                    android:layout_below="@+id/pos_add_tip_buttons_1">
+                    <Button
+                        style="@style/PointOfSaleTipButton"
+                        android:filterTouchesWhenObscured="true"
+                        android:tag="15"/>
+                    <Button
+                        style="@style/PointOfSaleTipButton"
+                        android:filterTouchesWhenObscured="true"
+                        android:tag="20"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_secondary"
+                    android:text="@string/pos_tip_custom"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/pos_add_tip_buttons_2"
+                    android:filterTouchesWhenObscured="true"
+                    android:id="@+id/pos_add_tip_custom"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pos_add_tip_custom"
+                    android:id="@+id/pos_add_tip_custom_container"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="10dp">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/pos_tip_custom_hint"
+                        android:textSize="9pt"
+                        android:id="@+id/pos_add_tip_custom_field"
+                        android:visibility="gone"
+                        android:layout_alignParentLeft="true"
+                        android:inputType="number"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9pt"
+                        android:id="@+id/pos_add_tip_custom_text"
+                        android:layout_toRightOf="@+id/pos_add_tip_custom_field"
+                        android:layout_alignBaseline="@+id/pos_add_tip_custom_field"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_primary"
+                    android:text="@string/pos_tip_custom_confirm"
+                    android:filterTouchesWhenObscured="true"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/pos_add_tip_custom_container"
+                    android:id="@+id/pos_add_tip_custom_confirm"
+                    android:visibility="gone"
+                    android:textColor="#ffffff"/>
+
+            </RelativeLayout>
+        </ViewFlipper>
+    
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:id="@+id/pos_bottom_bar"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/pos_bottom_notice"
+            android:textColor="#99323232"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_core_overflow"
+            android:background="@drawable/button_transparent"
+            android:filterTouchesWhenObscured="true"
+            android:id="@+id/pos_menu"
+            android:padding="7dp"/>
+    </RelativeLayout>
+    
+</RelativeLayout>

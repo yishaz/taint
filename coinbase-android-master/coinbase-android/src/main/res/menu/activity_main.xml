@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_refresh">
+    </item>
+    <item
+        android:id="@+id/menu_barcode"
+        android:icon="@drawable/ic_action_barcode"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_barcode">
+    </item>
+    <item
+        android:id="@+id/menu_merchant_pin"
+        android:showAsAction="never"
+        android:title="@string/menu_merchant_pin">
+    </item>
+    <item
+        android:id="@+id/menu_kiosk_mode"
+        android:showAsAction="never"
+        android:title="@string/menu_kiosk_mode_enable">
+    </item>
+    <item
+        android:id="@+id/menu_tip"
+        android:showAsAction="never"
+        android:title="@string/menu_tip_enable">
+    </item>
+    <item
+        android:id="@+id/menu_sign_out"
+        android:showAsAction="never"
+        android:title="@string/menu_sign_out">
+    </item>
+    <item
+        android:id="@+id/menu_accounts"
+        android:showAsAction="never"
+        android:title="@string/menu_accounts">
+    </item>
+    <item android:id="@+id/menu_help" android:showAsAction="never" android:title="@string/menu_help"></item>
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_about">
+    </item>
+
+</menu>

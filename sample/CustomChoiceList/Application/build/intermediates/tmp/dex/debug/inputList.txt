@@ -1,0 +1,4 @@
+/Users/yishaz/Android/sample/CustomChoiceList/Application/build/intermediates/classes/debug
+/Users/yishaz/Android/sample/CustomChoiceList/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar
+/Users/yishaz/Android/sample/CustomChoiceList/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-2569ec16b537046fb796719a84502bfeec2595e6.jar
+/Users/yishaz/Android/sample/CustomChoiceList/Application/build/intermediates/pre-dexed/debug/classes-0330e22930da0937a6cecd47ac472cced9caaaad.jar

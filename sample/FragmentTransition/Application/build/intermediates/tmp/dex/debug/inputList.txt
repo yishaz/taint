@@ -1,0 +1,7 @@
+/Users/yishaz/Android/sample/FragmentTransition/Application/build/intermediates/classes/debug
+/Users/yishaz/Android/sample/FragmentTransition/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-61b4eab954ea9f4bf431d3f972902144e7704d09.jar
+/Users/yishaz/Android/sample/FragmentTransition/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar
+/Users/yishaz/Android/sample/FragmentTransition/Application/build/intermediates/pre-dexed/debug/classes-c0e68886216c4716ee90817669954194330a1394.jar
+/Users/yishaz/Android/sample/FragmentTransition/Application/build/intermediates/pre-dexed/debug/classes-0ded5d608649252e06e7c315b0e4ca81ae45af19.jar
+/Users/yishaz/Android/sample/FragmentTransition/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-04d85b980709c0a2de0415f67dd1679c2cc14801.jar
+/Users/yishaz/Android/sample/FragmentTransition/Application/build/intermediates/pre-dexed/debug/classes-64b6316382679755483e98662871b7576374c1b6.jar

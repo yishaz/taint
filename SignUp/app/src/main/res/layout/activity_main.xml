@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@drawable/wallpaper1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="30dp"
+        android:layout_weight="0.15"
+        android:id="@+id/layout">
+
+        <LinearLayout
+            android:id="@+id/A"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:id="@+id/sign_up"
+                android:textSize="@android:dimen/app_icon_size"
+                android:textColor="#fff6ffff"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/B"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5">
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:hint="Username" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:hint="Password" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:layout_weight="1"
+                android:hint="example@.com" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:hint="Phone Number" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout2"
+                android:layout_weight="1">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/editText5"
+                    android:layout_weight="0.5"
+                    android:hint="Address" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/editText6"
+                    android:layout_weight="1"
+                    android:hint="Zip Code" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/C"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Sign Up"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/wallpaper2"
+                android:clickable="true"
+                android:elegantTextHeight="false"
+                android:textColor="#ff399eff"
+                android:textSize="@dimen/abc_action_bar_default_height_material" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/D"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton"
+            android:src="@drawable/wallpaper2"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/wallpaper3"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

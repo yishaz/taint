@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pin_header"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="center"
+            android:background="#348eda"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/pin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_header"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pin_text"
+            android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/pin_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="isaac@siriusapplications.com"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/pin_number"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pin_account"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:focusable="false"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_number"
+            android:id="@+id/pin_keyboard"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:layout_margin="25dp"></GridView>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+/Users/yishaz/Android/sample/SwipeRefreshListFragment/Application/build/intermediates/classes/debug
+/Users/yishaz/Android/sample/SwipeRefreshListFragment/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar
+/Users/yishaz/Android/sample/SwipeRefreshListFragment/Application/build/intermediates/pre-dexed/debug/classes-eb2e2417c7b3645ca93ae63c6076b355831cfe00.jar
+/Users/yishaz/Android/sample/SwipeRefreshListFragment/Application/build/intermediates/pre-dexed/debug/classes-ef2f6843d342eb8e3cb589e053953c7dd9228884.jar
+/Users/yishaz/Android/sample/SwipeRefreshListFragment/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-3a084893320cd0df75c0dafd3004e161e44ef246.jar
+/Users/yishaz/Android/sample/SwipeRefreshListFragment/Application/build/intermediates/pre-dexed/debug/classes-8c9cb6f906cd502400565d4533350d7ba81aee5a.jar

@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Consumer version includes QR scanner -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
+    <application>
+        <activity android:name="com.coinbase.android.TransactionDetailsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="http" android:pathPattern="/transactions/.*" android:host="coinbase.com"/>
+                <data android:scheme="https" android:pathPattern="/transactions/.*" android:host="coinbase.com"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.coinbase.android.BalanceAppWidgetProvider"
+                  android:label="@string/widget_balance_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/balance_appwidget_provider" />
+        </receiver>
+        <receiver android:name="com.coinbase.android.TransactionsAppWidgetProvider"
+                  android:label="@string/widget_transactions_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/transactions_appwidget_provider" />
+        </receiver>
+        <receiver android:name="com.coinbase.android.PriceAppWidgetProvider"
+                  android:label="@string/widget_price_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/price_appwidget_provider" />
+        </receiver>
+        <activity android:name="com.coinbase.zxing.client.android.CaptureActivity"
+                  android:configChanges="keyboardHidden"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name="com.coinbase.android.ReceiveAddressesActivity"
+                  android:configChanges="orientation|screenSize"></activity>
+        <service android:name="com.coinbase.android.TransactionsRemoteViewsService"
+                 android:permission="android.permission.BIND_REMOTEVIEWS"></service>
+        <service android:name="com.coinbase.android.UpdateWidgetBalanceService"></service>
+        <service android:name="com.coinbase.android.UpdateWidgetPriceService"></service>
+        <activity android:name="com.coinbase.android.WidgetChooseAccountActivity"
+                  android:theme="@style/Theme.Coinbase.Transparent">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coinbase.android.WidgetChooseCurrencyActivity"
+            android:label="@string/widget_currency_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.coinbase.android.transfers.ConnectivityChangeReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coinbase.android.transfers.DelayedTxSenderService"></service>
+    </application>
+
+</manifest>

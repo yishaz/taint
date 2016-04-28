@@ -1,0 +1,8 @@
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/classes/debug
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-0c975f646477f793f05f4f3c4334803da034ee0b.jar
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/pre-dexed/debug/classes-cf298c81b60a0d6007b0fb3a919138a659b7201c.jar
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/pre-dexed/debug/classes-a499f44c739962af6ebe25b4f7cd4100414e0877.jar
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/pre-dexed/debug/picasso-2.4.0-f800b8ac879fa71f9fb3ef248f89629a0d6c6c00.jar
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-345bdbab2e7226d02cff76b256025fb8ec2579db.jar
+/Users/yishaz/Android/sample/ActivitySceneTransitionBasic/Application/build/intermediates/pre-dexed/debug/classes-a751a98d244ebb13a68c2e13fe6f36f8e16fc236.jar

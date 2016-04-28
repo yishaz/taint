@@ -1,0 +1,7 @@
+/Users/yishaz/Android/sample/ActionBarCompat-ShareActionProvider/Application/build/intermediates/classes/debug
+/Users/yishaz/Android/sample/ActionBarCompat-ShareActionProvider/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar
+/Users/yishaz/Android/sample/ActionBarCompat-ShareActionProvider/Application/build/intermediates/pre-dexed/debug/classes-ca093c22c3ce665c859d30313d40c60b9d665f93.jar
+/Users/yishaz/Android/sample/ActionBarCompat-ShareActionProvider/Application/build/intermediates/pre-dexed/debug/classes-f6235ff109dc13053d9fcb3e2734e8c1db39043d.jar
+/Users/yishaz/Android/sample/ActionBarCompat-ShareActionProvider/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-78ed055d81db61cba9e518db238d044e3bdfde34.jar
+/Users/yishaz/Android/sample/ActionBarCompat-ShareActionProvider/Application/build/intermediates/pre-dexed/debug/classes-409daaee9f092a819e4213bb7a1e65ce7a1e4e22.jar
+/Users/yishaz/Android/sample/ActionBarCompat-ShareActionProvider/Application/build/intermediates/pre-dexed/debug/classes-a4843ff6c3d9b9dcda78511c5a15f6a47de39d5f.jar

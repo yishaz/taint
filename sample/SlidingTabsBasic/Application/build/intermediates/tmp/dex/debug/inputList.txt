@@ -1,0 +1,4 @@
+/Users/yishaz/Android/sample/SlidingTabsBasic/Application/build/intermediates/classes/debug
+/Users/yishaz/Android/sample/SlidingTabsBasic/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar
+/Users/yishaz/Android/sample/SlidingTabsBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-e32ad5fe05fb9d421a23267b4a51ff7f91b9fcd3.jar
+/Users/yishaz/Android/sample/SlidingTabsBasic/Application/build/intermediates/pre-dexed/debug/classes-98a4e36f75a6fe3ebb9142e36505ce810429dc90.jar

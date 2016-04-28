@@ -1,0 +1,67 @@
+<resources>
+
+    <color name="wallet_balance_color">#2D65C3</color>
+    <color name="wallet_balance_color_invalid">#666666</color>
+
+    <style name="wallet_balance_loaded">
+        <item name="android:textColor">@color/wallet_balance_color</item>
+    </style>
+
+    <style name="wallet_balance_invalid">
+        <item name="android:textColor">@color/wallet_balance_color_invalid</item>
+    </style>
+
+    <color name="transaction_positive">#4EB17B</color>
+    <color name="transaction_negative">#B14E4E</color>
+    <color name="transaction_neutral">#000000</color>
+    <color name="transactiondetails_label">#000000</color>
+
+    <color name="transaction_inlinestatus_complete">#9196aa</color>
+    <color name="transaction_inlinestatus_pending">#f89406</color>
+    <color name="transaction_inlinestatus_delayed">#3882cd</color>
+
+    <color name="transactions_sync_error_critical">#B30000</color>
+    <color name="transactions_sync_error_calm">#ff98aec9</color>
+
+    <style name="TransactionDetailsLabel" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/transactiondetails_label</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TransactionStatus">
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Coinbase.Transparent" parent="android:Theme">
+	    <item name="android:windowIsTranslucent">true</item>
+	    <item name="android:windowBackground">@android:color/transparent</item>
+	    <item name="android:windowContentOverlay">@null</item>
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowIsFloating">true</item>
+	    <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="LoginIntroDialogAnimation">
+        <item name="android:windowExitAnimation">@anim/login_intro</item>
+    </style>
+
+    <style name="Theme.Coinbase.NoWindowContentOverlay" parent="@style/Theme.Coinbase">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="PointOfSaleTipButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+</resources>

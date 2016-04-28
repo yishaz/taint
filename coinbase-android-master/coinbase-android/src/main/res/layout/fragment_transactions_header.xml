@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee">
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/wallet_layout"
+	    android:padding="15dp"
+        android:layout_margin="@dimen/home_card_padding"
+        android:background="@drawable/fragment_transactiondetails_bg">
+
+	    <TextView
+            android:id="@+id/wallet_balance_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textColor="#666666"
+            android:text="@string/wallet_balance_label"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <TextView
+	        android:id="@+id/wallet_balance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/wallet_balance_label"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/wallet_balance_def"
+	        style="@style/wallet_balance_invalid"
+	        android:textSize="30sp" />
+	
+	    <TextView
+	        android:id="@+id/wallet_balance_home"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/wallet_balance"
+	        android:layout_alignParentLeft="true"
+	        android:textColor="#666666"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <FrameLayout
+	        android:id="@+id/wallet_send"
+	        android:layout_width="46dp"
+	        android:layout_height="58dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:scaleType="center"
+                android:src="@drawable/send_icon_button"
+                android:layout_gravity="top|center_horizontal"
+                android:duplicateParentState="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_balance_send"
+                android:id="@+id/wallet_send_label"
+                android:textSize="7pt"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textColor="@color/wallet_button"
+                android:duplicateParentState="true"
+                android:gravity="center"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wallet_hidden_notice"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wallet_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wallet_hidden_notice"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/wallet_hidden_show"
+            android:text="@string/wallet_hidden_show"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/spacer"
+        android:layout_below="@+id/wallet_hidden_notice"/>
+	    
+    <TextView
+        android:id="@+id/wallet_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spacer"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFFFF"
+        android:text="@string/transactions_refresh_error"
+        android:background="@color/transactions_sync_error_critical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

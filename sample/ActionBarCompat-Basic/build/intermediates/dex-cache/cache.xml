@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/yishaz/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar" />
+    </item>
+    <item
+        jar="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-296f7840ef9e3860ed75ab6eaa32ea841e309637.jar" />
+    </item>
+    <item
+        jar="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/classes-e15b6e9d2935a9b257a0631e08828da171dd93a6.jar" />
+    </item>
+    <item
+        jar="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
+        <dex dex="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/classes-306bfd68e1e33383e29dcaa2b4348414d2ac61d7.jar" />
+    </item>
+    <item
+        jar="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/classes-a8cd1444a6fd3ddf09d23ef516b5371381db529b.jar" />
+    </item>
+    <item
+        jar="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="9742ced04aafd9ac97dd2c66c1aa0e32d2ae7e54">
+        <dex dex="/Users/yishaz/Android/sample/ActionBarCompat-Basic/Application/build/intermediates/pre-dexed/debug/classes-f33227840d3399a9afd710d4edf5fb53490e0ec3.jar" />
+    </item>
+
+</items>

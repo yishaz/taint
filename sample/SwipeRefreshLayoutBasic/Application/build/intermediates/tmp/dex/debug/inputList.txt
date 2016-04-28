@@ -1,0 +1,6 @@
+/Users/yishaz/Android/sample/SwipeRefreshLayoutBasic/Application/build/intermediates/classes/debug
+/Users/yishaz/Android/sample/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-71976830e5f1bc4ab2f0007eddaa07d7a45c97c2.jar
+/Users/yishaz/Android/sample/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-7c413bd8ac6ca5a25f8da0350c66034899833a0c.jar
+/Users/yishaz/Android/sample/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-e3325a987776d8f093963013d4d9cfba2c60ee9f.jar
+/Users/yishaz/Android/sample/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-769c630f8b0aea2234abdfa1570189129d984d4a.jar
+/Users/yishaz/Android/sample/SwipeRefreshLayoutBasic/Application/build/intermediates/pre-dexed/debug/classes-1ea2a4687a1df59ca2f7a0db9c7cd157cfb970d5.jar
